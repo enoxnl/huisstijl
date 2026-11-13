@@ -1,0 +1,10 @@
+# Fonts remain local: Microsoft package grants no redistribution rights.
+*.ttf
+*.otf
+output/enox/fonts/*.rtf
+generated/
+.work/
+~$*
+__pycache__/
+.DS_Store
+Thumbs.db
