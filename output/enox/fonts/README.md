@@ -29,6 +29,32 @@ Voor offline installatie met het ongewijzigde Microsoft ZIP-bestand:
 
 Opnieuw uitvoeren is mogelijk: identieke bestanden worden hergebruikt. Een afwijkend pakket of een andere bestaande fontversie wordt niet stilzwijgend geaccepteerd of overschreven. Bij een fout kan een deel van de fonts al geinstalleerd zijn; herstel de gemelde oorzaak en voer het script opnieuw uit.
 
+## Installeren op Ubuntu
+
+Voer als normale gebruiker uit vanuit de hoofdmap van de repository:
+
+```bash
+bash scripts/install-enox-fonts.sh
+```
+
+Het script vereist Python 3, fontconfig en CA-certificaten. Installeer ontbrekende afhankelijkheden zo nodig met `sudo apt install python3 fontconfig ca-certificates`. Voer het fontscript zelf **zonder sudo** uit.
+
+De vijf fonts worden na SHA-256-controle geplaatst in `~/.local/share/fonts/enox`. De Microsoft-licentie wordt opgeslagen in `~/.local/share/enox/licenses`. Als `XDG_DATA_HOME` is ingesteld, wordt die map gebruikt in plaats van `~/.local/share`. Het script werkt de fontcache bij met `fc-cache`. Herstart daarna LibreOffice en andere documenttoepassingen.
+
+Controle zonder installatie (downloadt wel het pakket):
+
+```bash
+bash scripts/install-enox-fonts.sh --dry-run
+```
+
+Offline installatie:
+
+```bash
+bash scripts/install-enox-fonts.sh --package "$HOME/Downloads/Microsoft Aptos Fonts.zip"
+```
+
+Beide opties kunnen worden gecombineerd. Identieke fonts worden hergebruikt; afwijkende versies in de doelmap worden niet overschreven. Fonts die elders zijn geinstalleerd blijven staan. Als een toepassing een andere versie kiest, controleer dan met `fc-match Aptos` welke versie wordt gebruikt. Bij een fout tijdens schrijven of het bijwerken van de cache kunnen al fonts geplaatst zijn; herstel de oorzaak en voer het script opnieuw uit.
+
 ## Handmatig installeren
 
 Download het officiële Microsoft-pakket via onderstaande link en pak het lokaal uit. Gebruik `Aptos.ttf`, `Aptos-Bold.ttf`, `Aptos-Italic.ttf`, `Aptos-Bold-Italic.ttf` en `Aptos-Display-Bold.ttf`. Selecteer deze bestanden in Windows, klik met de rechtermuisknop en kies **Installeren**. Sluit Word, PowerPoint of LibreOffice daarna af en open de toepassing opnieuw. Op andere systemen moeten dezelfde fonts beschikbaar zijn voor de gebruikte documentrenderer.

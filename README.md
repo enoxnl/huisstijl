@@ -40,3 +40,5 @@ Installeer de benodigde Aptos-varianten vóór gebruik. Fontbestanden worden weg
 Op Windows kan dit vanuit de repository met `.\scripts\Install-EnoxFonts.ps1` (zonder administratorrechten). Gebruik `-WhatIf` om het pakket te controleren zonder fonts te installeren. Het script haalt de fonts rechtstreeks bij Microsoft op.
 
 `generated/` is bestemd voor nieuwe documenten en `.work/` voor tijdelijke bestanden. Beide zijn uitgesloten van Git. Bewaar uitsluitend herbruikbare huisstijlbestanden in deze repository; voeg klantdocumenten niet toe.
+
+Op Ubuntu gebruik je `bash scripts/install-enox-fonts.sh`, zonder sudo. Met `--dry-run` controleer je het pakket zonder installatie; met `--package` gebruik je een lokaal Microsoft ZIP-bestand. Zie de fontinstructies voor afhankelijkheden en installatiepaden.
