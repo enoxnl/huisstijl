@@ -37,4 +37,6 @@ De repository bevat de merkbasis; voor het maken en controleren van Office-besta
 
 Installeer de benodigde Aptos-varianten vóór gebruik. Fontbestanden worden wegens de Microsoft-licentie niet via Git verspreid. De instructies staan in de fontmap.
 
+Op Windows kan dit vanuit de repository met `.\scripts\Install-EnoxFonts.ps1` (zonder administratorrechten). Gebruik `-WhatIf` om het pakket te controleren zonder fonts te installeren. Het script haalt de fonts rechtstreeks bij Microsoft op.
+
 `generated/` is bestemd voor nieuwe documenten en `.work/` voor tijdelijke bestanden. Beide zijn uitgesloten van Git. Bewaar uitsluitend herbruikbare huisstijlbestanden in deze repository; voeg klantdocumenten niet toe.
