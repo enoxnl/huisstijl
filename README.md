@@ -33,6 +33,8 @@ Vermeld voor een rapport of presentatie daarnaast de gewenste omvang en, indien 
 
 De repository bevat de merkbasis; voor het maken en controleren van Office-bestanden zijn daarnaast geschikte documenttools en een renderer nodig. Codex gebruikt daarvoor de mogelijkheden van de betreffende omgeving. Templates zijn bewerkbaar en worden niet door een automatische generator opnieuw opgebouwd.
 
+De presentatietemplate bevat uitsluitend anonieme voorbeeldinhoud en invulvelden en is geclassificeerd als **TLP:CLEAR**. Vervang naam, functie, profiel en contactgegevens bij gebruik. Bepaal voor iedere nieuwe presentatie opnieuw de classificatie op basis van de inhoud; het label van de template is geen standaard voor nieuwe documenten. Bewaar geen persoonsgegevens, klantverwijzingen of ontwerphistorie in de slides, sprekersnotities of metadata van de mastertemplate.
+
 ## Lettertypen en uitvoer
 
 Installeer de benodigde Aptos-varianten vóór gebruik. Fontbestanden worden wegens de Microsoft-licentie niet via Git verspreid. De instructies staan in de fontmap.
